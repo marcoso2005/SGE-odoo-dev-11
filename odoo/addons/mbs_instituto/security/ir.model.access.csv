@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_mbs_instituto_mbs_instituto,mbs_instituto.mbs_instituto,model_mbs_instituto_mbs_instituto,base.group_user,1,1,1,1

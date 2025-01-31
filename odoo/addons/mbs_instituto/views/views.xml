@@ -1,0 +1,60 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+<!--
+    <record model="ir.ui.view" id="mbs_instituto.list">
+      <field name="name">mbs_instituto list</field>
+      <field name="model">mbs_instituto.mbs_instituto</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </tree>
+      </field>
+    </record>
+-->
+
+    <!-- actions opening views on models -->
+<!--
+    <record model="ir.actions.act_window" id="mbs_instituto.action_window">
+      <field name="name">mbs_instituto window</field>
+      <field name="res_model">mbs_instituto.mbs_instituto</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+-->
+
+    <!-- server action to the one above -->
+<!--
+    <record model="ir.actions.server" id="mbs_instituto.action_server">
+      <field name="name">mbs_instituto server</field>
+      <field name="model_id" ref="model_mbs_instituto_mbs_instituto"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": model._name,
+        }
+      </field>
+    </record>
+-->
+
+    <!-- Top menu item -->
+<!--
+    <menuitem name="mbs_instituto" id="mbs_instituto.menu_root"/>
+-->
+    <!-- menu categories -->
+<!--
+    <menuitem name="Menu 1" id="mbs_instituto.menu_1" parent="mbs_instituto.menu_root"/>
+    <menuitem name="Menu 2" id="mbs_instituto.menu_2" parent="mbs_instituto.menu_root"/>
+-->
+    <!-- actions -->
+<!--
+    <menuitem name="List" id="mbs_instituto.menu_1_list" parent="mbs_instituto.menu_1"
+              action="mbs_instituto.action_window"/>
+    <menuitem name="Server to list" id="mbs_instituto" parent="mbs_instituto.menu_2"
+              action="mbs_instituto.action_server"/>
+-->
+  </data>
+</odoo>
