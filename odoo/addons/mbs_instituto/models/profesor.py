@@ -1,5 +1,7 @@
+from odoo import models, fields, api
+
 class Profesor(models.Model):
-    _name = 'mbs_instituto.Profesor'
+    _name = 'mbs_instituto.profesor'
     _description = 'Profesores que se encuentran en el instituto'
 
     dni = fields.Char('DNI')
