@@ -1,19 +1,11 @@
-# -*- coding: utf-8 -*-
+class alumno(models.Model):
+    _name = 'mbs_instituto.alumno'
+    _description = 'Alumnos que se encuentran matriculados en el instituto'
 
-# from odoo import models, fields, api
-
-
-# class mbs_instituto(models.Model):
-#     _name = 'mbs_instituto.mbs_instituto'
-#     _description = 'mbs_instituto.mbs_instituto'
-
-#     name = fields.Char()
-#     value = fields.Integer()
-#     value2 = fields.Float(compute="_value_pc", store=True)
-#     description = fields.Text()
-#
-#     @api.depends('value')
-#     def _value_pc(self):
-#         for record in self:
-#             record.value2 = float(record.value) / 100
-
+    dni = fields.Char('DNI')    
+    numEstudiante = fields.Char('Número de estudiante')
+    nombre = fields.Char('Nombre')
+    apellidos = fields.Char('Apellidos')
+    fechaNacimiento = fields.Date('Fecha nacimiento')
+    repetidor = fields.Boolean('Repetidor')
+    media = fields.Float('Media del curso')
