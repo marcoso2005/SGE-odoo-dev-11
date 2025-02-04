@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
 from . import asignatura
-from . import modulo
+from . import grupo
 from . import alumno
 from . import profesor
