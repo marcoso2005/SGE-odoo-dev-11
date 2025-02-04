@@ -1,4 +1,4 @@
-class alumno(models.Model):
+class Alumno(models.Model):
     _name = 'mbs_instituto.alumno'
     _description = 'Alumnos que se encuentran matriculados en el instituto'
 
@@ -9,3 +9,4 @@ class alumno(models.Model):
     fechaNacimiento = fields.Date('Fecha nacimiento')
     repetidor = fields.Boolean('Repetidor')
     media = fields.Float('Media del curso')
+    foto = fields.Image('Foto del alumno', max_width=500, max_height=500)
