@@ -11,4 +11,4 @@ class Alumno(models.Model):
     fechaNacimiento = fields.Date('Fecha de nacimiento')
     repetidor = fields.Boolean('Repetidor')
     media = fields.Float('Media del curso')
-    foto = fields.Image('Foto del alumno', max_width=500, max_height=500)
+    foto = fields.Image('Foto del alumno', max_width=10, max_height=10)

@@ -1,0 +1,42 @@
+<odoo>
+  <data>
+    <record id="mbs_instituto.alumno_tree" model="ir.ui.view">
+      <field name="name">mbs_instituto.alumno.tree</field>
+      <field name="model">mbs_instituto.alumno</field>
+      <field name="arch" type="xml">
+        <tree string="Alumnos">
+          <!--<field name="foto" optional="show" widget="image" />
+          <field name="numEstudiante" />          
+          <field name="nombre" />
+          <field name="apellidos" />
+          <field name="dni" />
+          <field name="fechaNacimiento" />
+          <field name="repetidor" optional="hide"/>
+          <field name="media" optional="hide"/>!-->
+        </tree>
+      </field>
+    </record>
+
+
+    <record id="mbs_instituto.alumno_form" model="ir.ui.view">
+      <field name="name">mbs_instituto.alumno.form</field>
+      <field name="model">mbs_instituto.alumno</field>
+      <field name="arch" type="xml">
+        <form string="">
+          <sheet>
+            <group>
+              <field name="foto" widget="image" class="oe_avatar" options="{&quot;preview_image&quot;: &quot;avatar_128&quot;}" on_change="1" field_id="image_1920_0"/>
+              <field name="numEstudiante" />          
+              <field name="nombre" />
+              <field name="apellidos" />
+              <field name="dni" />
+              <field name="fechaNacimiento" />
+              <field name="repetidor" />
+              <field name="media" />
+            </group>
+          </sheet>
+        </form>
+      </field>
+    </record>
+  </data>
+</odoo>
