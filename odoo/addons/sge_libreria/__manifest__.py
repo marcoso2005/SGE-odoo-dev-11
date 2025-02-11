@@ -8,6 +8,7 @@
 Modulo de ejemplo SGE<br/>
 Gestion de una librería
     """,
+    'application': "True",
 
     'author': "Soy yo",
     'website': "https://www.mipaginita.com",
@@ -25,7 +26,7 @@ Gestion de una librería
     'data': [
         # 'security/ir.model.access.csv',
         'views/categoria.xml',
-        'views/templates.xml',
+        'views/menus.xml',
     ],
     # only loaded in demonstration mode
     'demo': [
