@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!--Acciones-->
+    <record id="mbs_instituto.abrir_alumno" model="ir.actions.act_window">
+        <field name="name">Alumnos</field>
+        <field name="res_model">mbs_instituto.alumno</field>
+        <field name="view_mode">kanban,tree,form</field>
+    </record>
+
+    <!--Menus-->
+    <data noupdate="1">
+        <menuitem
+            id="mbs_instituto.instituto_menu"
+            name="Instituto"
+            sequence="10"/>
+    </data>
+
+    <menuitem
+        id="mbs_instituto.alumno_menu"
+        name="Alumnos"
+        action="mbs_instituto.abrir_alumno"
+        parent="mbs_instituto.instituto_menu"
+        sequence="10"/>
+</odoo>
