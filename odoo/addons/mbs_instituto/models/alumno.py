@@ -6,9 +6,9 @@ class Alumno(models.Model):
 
     dni = fields.Char('DNI')    
     numEstudiante = fields.Char('Número de estudiante')
-    nombre = fields.Char('Nombre')
+    name = fields.Char('Nombre')
     apellidos = fields.Char('Apellidos')
     fechaNacimiento = fields.Date('Fecha de nacimiento')
     repetidor = fields.Boolean('Repetidor')
     media = fields.Float('Media del curso')
-    foto = fields.Image('Foto del alumno', max_width=10, max_height=10)
+    foto = fields.Image('Foto del alumno', max_width=100, max_height=100)
