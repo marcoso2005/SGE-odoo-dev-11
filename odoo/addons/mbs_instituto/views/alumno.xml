@@ -1,33 +1,33 @@
 <odoo>
   <data>
     <record id="mbs_instituto.alumno_tree" model="ir.ui.view">
-      <field name="name">mbs_instituto.alumno.tree</field>
+      <field name="name">Alumnos tree</field>
       <field name="model">mbs_instituto.alumno</field>
       <field name="arch" type="xml">
         <tree string="Alumnos">
-          <!--<field name="foto" optional="show" widget="image" />
+          <field name="foto" optional="show" widget="image" />
           <field name="numEstudiante" />          
-          <field name="nombre" />
+          <field name="name" />
           <field name="apellidos" />
           <field name="dni" />
           <field name="fechaNacimiento" />
           <field name="repetidor" optional="hide"/>
-          <field name="media" optional="hide"/>!-->
+          <field name="media" optional="hide"/>
         </tree>
       </field>
     </record>
 
 
     <record id="mbs_instituto.alumno_form" model="ir.ui.view">
-      <field name="name">mbs_instituto.alumno.form</field>
+      <field name="name">Alumnos form</field>
       <field name="model">mbs_instituto.alumno</field>
       <field name="arch" type="xml">
         <form string="">
           <sheet>
             <group>
-              <field name="foto" widget="image" class="oe_avatar" options="{&quot;preview_image&quot;: &quot;avatar_128&quot;}" on_change="1" field_id="image_1920_0"/>
+              <field name="foto" widget="image" class="oe_avatar"/>
               <field name="numEstudiante" />          
-              <field name="nombre" />
+              <field name="name" />
               <field name="apellidos" />
               <field name="dni" />
               <field name="fechaNacimiento" />
@@ -36,6 +36,44 @@
             </group>
           </sheet>
         </form>
+      </field>
+    </record>
+
+
+
+
+    <record id="mbs_instituto.alumno_kanban" model="ir.ui.view">
+      <field name="name">Alumnos kanban</field>
+      <field name="model">mbs_instituto.alumno</field>
+      <field name="arch" type="xml">
+        <kanban>
+            <field name="foto" widget="image" class="oe_avatar"/>
+            <field name="numEstudiante" />          
+            <field name="name" />
+            <field name="apellidos" />
+            <field name="dni" />
+            <field name="fechaNacimiento" />
+            <field name="repetidor" />
+            <field name="media" />
+
+          <templates>
+            <t t-name="kanban-box">
+              <div>
+                <field name="foto" widget="image" />
+              </div>
+              <div>
+                <ul>
+                  <li><field name="name"/></li>
+                  <li ><field name="apellidos" /></li>
+                  <li ><field name="numEstudiante" /></li>
+                  <li ></li>
+                  <li ><field name="media" /></li>
+                </ul>  
+              </div>
+            </t>
+            
+          </templates>
+        </kanban>
       </field>
     </record>
   </data>
