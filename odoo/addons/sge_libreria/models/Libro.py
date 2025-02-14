@@ -17,4 +17,6 @@ class Libro(models.Model):
 
    # malo regular bueno
 
+   categoria_id = fields.Many2one('sge_libreria.categoria', string='Categoría')
+
 

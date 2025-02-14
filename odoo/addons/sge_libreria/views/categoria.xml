@@ -9,6 +9,7 @@
               <group>
                 <field name="name" />
                 <field name="description" />
+                <field name="libro_ids" />
               </group>
             </sheet>
           </form>
